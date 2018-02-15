@@ -38,7 +38,7 @@ class App extends Component {
          this.addMeal(response.data)
          this.meals = this.getMeals()
          for (let i=0; i<meals.length; i++) {
-           console.log("all data", response.formdata)
+           console.log("all data", response.data)
            console.log("extracted data",this.meals)
          }
        })
