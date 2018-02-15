@@ -1,6 +1,7 @@
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom'
 import React from 'react'
 import ReactDOM from 'react-dom'
+import './components/header.css'
 
 const Header = () => (
       <ul className="navigation grid grid-gutters large-grid-fit med-grid-fit small-grid-1of2">
