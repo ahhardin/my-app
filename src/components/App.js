@@ -35,11 +35,11 @@ class App extends Component {
            "X-Mashape-Authorization": API_KEY
          }}
        ).then(response => {
-         console.log("iterated response",response,response.data.id)
          this.addMeal(response.data)
          this.meals = this.getMeals()
          for (let i=0; i<meals.length; i++) {
-           console.log("meal id",this.meals)
+           console.log("all data", response.formdata)
+           console.log("extracted data",this.meals)
          }
        })
        }
