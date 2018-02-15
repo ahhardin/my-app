@@ -27,6 +27,7 @@ class App extends Component {
       "X-Mashape-Authorization": API_KEY
     }}
      ).then(response => {
+       console.log("all data", response.data)
        const meals = response.data.meals;
        for (let i=0; i<meals.length; i++) {
          const id = meals[i].id
@@ -38,7 +39,6 @@ class App extends Component {
          this.addMeal(response.data)
          this.meals = this.getMeals()
          for (let i=0; i<meals.length; i++) {
-           console.log("all data", response.data)
            console.log("extracted data",this.meals)
          }
        })
